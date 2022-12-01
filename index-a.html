@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- It is a container for metadata (data about data) -->
+<title>muse - main page</title>
+<!--Specifies the main pages Title-->
+<link rel="shortcut icon" href="https://t3.ftcdn.net/jpg/04/54/66/12/360_F_454661277_NtQYM8oJq2wOzY1X9Y81FlFa06DVipVD.jpg" type="image/x-icon">
+<!--It allows us to link our document to other resources.-->
+<!--heref specifies the icon location to our linked document -->
+<!--type is used to define the type of the content linked -->
+<meta charset="UTF-8">
+<!--charset specifies the character encoding for the HTML document.-->
+<!--UTF-8 character set covers almost all of the characters and symbols in the world!-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--viewport meta tag allows us to set the width and scaling of our website so that it's correctly sized on all devices, especially mobile devices.-->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+  /*The style element allows us to embed style information in our documents */
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/757/235/802/music-background-dark-vinyl-wallpaper-preview.jpg);
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+</style>
+<script src="hello.js"></script>
+<!--script is used to define a the client-side script (JavaScript).-->
+</head>
+<body>
+  <!--The body element represents the content of our document-->
+
+<div class="bgimg music-display-container music-text-white">
+  <div class="music-display-middle music-jumbo">
+    <!--div is used to make divisions of content in the our web page like (text, images, header, footer, navigation bar..-->
+    <p>muse</p>
+    <!--Browsers automatically add a single blank line before and after each <p> element in our webiste and is used to denote a paragraph in our webiste .-->
+  </div>
+  <div class="music-display-topleft music-container music-xlarge">
+    <p><button onclick="document.getElementById('music').style.display='block'" class="music-button music-black">music</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="music-button music-black">about us?</button></p>
+    <!--button onclick is a pointing device that the button has been pressed and released on an element in our website.-->
+    <!--Classes allows CSS and JavaScript to select and access specific elements in our website-->
+    <!--Here we have 2 blocks of our website music,contact-->
+  </div>
+  <div class="music-display-bottomleft music-container">
+    <p class="music-xlarge">find your musing</p>
+    <p class="music-large">your mini music-wiki</p>
+    <p><button onclick="document.getElementById('help').style.display='block'" class="music-button music-black">help?</button></p>
+    
+    
+    
+  </div>
+</div>
+
+<div id="music" class="music-modal">
+  <div class="music-modal-content music-animate-zoom">
+    <div class="music-container music-black music-display-container">
+      <span onclick="document.getElementById('music').style.display='none'" class="music-button music-display-topright music-large">close</span>
+      <h1><a style="color:white" href="index-b.html">ROCK</a></h1>
+    </div>
+    <div class="music-container">
+      <h5>AC DC </h5>
+      <h5>MANESKIN </h5>
+      <h5>QUEEN</h5>
+      <!-- h1 to h6 are used to represent section heading -->
+      <!--Here we have 4 genres in our website and each specific genre has 3 artists-->
+    </div>
+    <div class="music-container music-black">
+      <h1><a style="color:white" href="index-c.html">POP</a></h1>
+    </div>
+    <div class="music-container">
+      <h5>TAYLOR SWIFT</h5>
+      <h5>CHARLIE PUTH</h5>
+      <h5>BILLIE EILISH</h5>
+    </div>
+    <div class="music-container music-black">
+      <h1><a style="color:white" href="index-d.html">CARNATIC</a></h1>
+    </div>
+    <div class="music-container">
+      <h5>SID SRIRAM </h5>
+      <h5>RAM MIRIYALA </h5>
+      <h5>JONITA GANDHI </h5>
+    </div>
+    <div class="music-container music-black">
+        <h1><a style="color:white" href="index-e.html">BOLLYWOOD</a></h1>
+      </div>
+      <div class="music-container">
+        <h5>AR RAHMAN</h5>
+        <h5>ATIF ASLAM</h5>
+        <h5>ARIJIT SINGH</h5>
+      </div>
+  </div>
+</div>
+
+<div id="contact" class="music-modal">
+  <!--Here we allow the user to contact us regarding the queres of our website-->
+  <div class="music-modal-content music-animate-zoom">
+    <div class="music-container music-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="music-button music-display-topright music-large">close</span>
+      <h1>Heyyyy musers !!</h1>
+    </div>
+    <div class="music-container">
+      <p >
+Welcome to our website!
+<br>
+we hope using our website will be a happy experience.
+<br>
+The website mainly focuses on artists from different genres,it will make you get an insight about the artists and also about thier music platforms,
+<br>
+and also not to mention their new releases or such.
+<br>
+We are working on it little by little ,for now we will be posting about underrated artists from multiple genres and also give you guys updates about music industry in general.
+<br>
+We are going to post twice a month about new artists .
+<br>
+Happy exploring ,thankyou!
+<br>
+-TEAM MUSE.
+  </p>
+    </div>
+  </div>
+</div>
+
+<div id="help" class="music-modal">
+    <!--Here we allow the user to contact us regarding the queres of our website-->
+    <div class="music-modal-content music-animate-zoom">
+      <div class="music-container music-black">
+        <span onclick="document.getElementById('help').style.display='none'" class="music-button music-display-topright music-large">close</span>
+        <h1> now that you've logged in, check this for furthur help!</h1>
+      </div>
+      <div class="music-container">
+        <p >
+            click the music button, it helps you see all the different genres on our site. 
+            <br>
+            click the one genre you want to see/check.
+            <br>
+            we have rock, pop, carnatic and bollywood for you here today!
+            <br>
+            stream, listen, discover! happy listening :3
+    </p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
